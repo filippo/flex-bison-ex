@@ -1,3 +1,10 @@
+/* 
+ *  Example from the book: 
+ *  Flex & Bison
+ *  Author: John Levine
+ *  Publisher: O'Reilly Media
+ *  ISBN-13: 978-0596155971
+ */
 %option noyywrap
 %{
 int chars = 0;
