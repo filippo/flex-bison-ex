@@ -8,5 +8,9 @@ calc: calc.l calc.y
 	flex calc.l
 	gcc -o bin/$@ calc.tab.c lex.yy.c -lfl
 
+sgte:
+	flex sgte.l
+	gcc -o bin/$@ lex.yy.c -lfl
+
 clean:
-	rm calc.tab.* lex.yy.c bin/wc bin/calc
+	rm a.out calc.tab.* lex.yy.c bin/wc bin/calc bin/sgte
